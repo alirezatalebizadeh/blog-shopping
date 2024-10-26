@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { FaArrowRightFromBracket } from "react-icons/fa6";
+import { FaArrowRightFromBracket, FaChevronDown } from "react-icons/fa6";
 import {
   IoChatboxEllipsesOutline,
   IoDocumentTextOutline,
@@ -82,12 +82,10 @@ export default function Navbar() {
                     <HiOutlineShoppingBag className="w-5 h-5" />
                     Shop
                   </a>
-                  <svg
+                  <FaChevronDown
                     onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}
                     className="w-5 h-5 cursor-pointer"
-                  >
-                    <use href="#chevron-down"></use>
-                  </svg>
+                  />
                 </div>
 
                 {/* Submenu */}

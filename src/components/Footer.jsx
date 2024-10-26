@@ -10,7 +10,7 @@ export default function Footer() {
     <>
       <div className="bg-zinc-700 text-gray-300">
         <div className="flex flex-wrap gap-x-[50px] justify-between w-[98%] lg:w-[90%] mx-auto px-4 md:px-[96px] pt-8 md:pt-[62px] pb-[40px] md:pb-[54px]">
-          <div className="">
+          <div className="pt-10 md:pt-[26px]">
             <div className="flex items-center gap-x-5 text-gray-300">
               <Image
                 src="/images/app-logo.png"
@@ -20,12 +20,13 @@ export default function Footer() {
               />
               <Image
                 width={138}
+                alt="logo"
                 height={54}
                 src="/images/svgs/app-logo-type.svg"
                 className="w-[138px] h-[54px] text-white"
               />
             </div>
-            <p className=" text-base/[28px] md:text-xl/[48px] font-Dana w-[308px] md:w-[500px] mt-6 md:mt-[18px]">
+            <p className="text-base/[28px] md:text-xl/[48px] font-Dana w-[308px] md:w-[500px] mt-6 md:mt-[18px]">
               At HotCoffee, we are dedicated to bringing you the finest quality
               in the preparation and serving of various coffees, creating
               moments filled with pleasure and energy. Our goal is to elevate
@@ -141,7 +142,7 @@ export default function Footer() {
               </p>
               <div className="flex items-end gap-x-[6px] md:gap-x-6">
                 <Link
-                  href="#"
+                  href="https://instagram.com/hot_coffee"
                   className="flex-center gap-x-[6px] rounded-xl py-3 px-[14px] border border-orange-200 w-[176px] md:w-[248px]"
                 >
                   <Image
@@ -152,17 +153,16 @@ export default function Footer() {
                     height={26}
                   />
                   <span>
-                    <Link
-                      href="https://instagram.com/hot_coffee"
+                    <span
                       dir="ltr"
                       className="text-base/[22px] md:text-xl font-Dana text-orange-200"
                     >
                       @hot_coffee
-                    </Link>
+                    </span>
                   </span>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://t.me/hot_coffee"
                   className="flex-center gap-x-[6px] rounded-xl border border-orange-200 py-3 px-[14px] bg-gradient-to-tr from-orange-300 to-orange-200 w-[176px] md:w-[248px]"
                 >
                   <Image
@@ -173,13 +173,12 @@ export default function Footer() {
                     height={26}
                   />
                   <span>
-                    <Link
-                      href="https://t.me/hot_coffee"
+                    <span
                       dir="ltr"
-                      className="text-base/[22px] md:text-xl font-Dana text-orange-200"
+                      className="text-base/[22px] md:text-xl font-Dana text-black/75"
                     >
                       @hot_coffee
-                    </Link>
+                    </span>
                   </span>
                 </Link>
               </div>

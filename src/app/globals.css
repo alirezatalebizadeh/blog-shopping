@@ -77,16 +77,6 @@
     @apply block w-1 h-1 text-orange-300 absolute right-0 top-0 bottom-0;
     border-radius: 100px;
     margin: auto;
-
-    /* display: block;
-    width: 4px;
-    height: 4px;
-    background-color: #fdba74;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto; */
   }
 
   .overlay {
@@ -158,7 +148,7 @@
         rgba(0, 0, 0, 0.6) 33.85%,
         rgba(245, 245, 245, 0.1) 100%
       ),
-      url("../images/categories/category-right.jpg");
+      url("/images/categories/category-right.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -168,7 +158,7 @@
         rgba(0, 0, 0, 0.6) 33.85%,
         rgba(245, 245, 245, 0.1) 100%
       ),
-      url("../images/categories/category-left.jpg");
+      url("/images/categories/category-left.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -199,6 +189,7 @@
     @apply flex items-center justify-center;
   }
 }
+
 
 :root {
   --background: #ffffff;
