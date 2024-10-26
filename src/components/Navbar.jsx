@@ -2,7 +2,6 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
-import { FaRegMoon } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
@@ -15,12 +14,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { IoIosSunny } from "react-icons/io";
 import { TiHomeOutline } from "react-icons/ti";
 
-import {
-  FaBars,
-  FaHome,
-  FaShoppingBag,
-  FaShoppingBasket,
-} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -68,7 +62,7 @@ export default function Navbar() {
               </div>
               <div
                 onClick={() => setIsNavOpen(false)}
-                className="cursor-pointer"
+                className="cursor-pointer dark:text-white"
               >
                 X
               </div>
@@ -124,6 +118,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link href="#" className="flex items-center gap-x-2">
+                  <AiOutlineShoppingCart className="w-5 h-5" />
                   About Me
                 </Link>
               </li>
