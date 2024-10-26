@@ -2,6 +2,204 @@
 @tailwind components;
 @tailwind utilities;
 
+/* //! add font to project */
+@layer base {
+  /* ------ //! dana------ */
+  @font-face {
+    font-family: "Dana";
+    src: url("./fonts/Dana/DanaFaNum-Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Dana Medium";
+    src: url("./fonts/Dana/DanaFaNum-Medium.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Dana DemiBold";
+    src: url("./fonts/Dana/DanaFaNum-DemiBold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  /* ----- morabba------ */
+
+  @font-face {
+    font-family: "Morabba Light";
+    src: url("./fonts/Morabba/Morabba-Light.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Morabba Medium";
+    src: url("./fonts/Morabba/Morabba-Medium.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Morabba Bold";
+    src: url("./fonts/Morabba/Morabba-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
+}
+
+/* //! create custom component */
+@layer components {
+  /* ? styling scroll bar */
+  .scrollbar::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #3f3f46;
+  }
+  .scrollbarDark::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
+  /* styleing to sub menu */
+  .submenu {
+    @apply hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
+  }
+
+  .submenu-open {
+    @apply flex;
+  }
+
+  .summenu_item_active {
+    @apply relative text-orange-300 pr-2.5;
+    /* position: relative;
+    color: #fdba74;
+    padding-right: 10px; */
+  }
+
+  .summenu_item_active::after {
+    content: "";
+    @apply block w-1 h-1 text-orange-300 absolute right-0 top-0 bottom-0;
+    border-radius: 100px;
+    margin: auto;
+
+    /* display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #fdba74;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; */
+  }
+
+  .overlay {
+    @apply invisible opacity-0 fixed inset-0 w-full h-full md:hidden bg-black/40 z-10 transition-all;
+  }
+  .overlay--open {
+    @apply visible opacity-100;
+  }
+
+  .circle {
+    @apply flex items-center justify-center border rounded-full;
+  }
+  .circle-main {
+    @apply absolute bottom-0 right-0 left-0 mx-auto  translate-y-1/2 hidden md:flex;
+  }
+  .circle-lg {
+    @apply w-[203px] h-[203px] border-white/25;
+  }
+  .circle_md {
+    @apply w-[145px] h-[145px] border-white/50;
+  }
+  .circle_sm {
+    @apply w-[95px] h-[95px] border-white/80;
+  }
+
+  /* !Products - section */
+  @media screen and (min-width: 1280px) {
+    html.dark .products {
+      background-image: url("/images/product-bg.png");
+    }
+    .products {
+      background: linear-gradient(
+          rgba(243, 244, 246, 0.65),
+          rgba(243, 244, 246, 0.65)
+        ),
+        url("/images/product-bg.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .section_title {
+    @apply font-MorabbaMedium text-zinc-700 dark:text-white text-2xl leading-8 md:text-5xl md:leading-10;
+  }
+  .section_subTitle {
+    @apply font-MorabbaLight text-zinc-700 dark:text-white mt-0.5 md:mt-[6px] text-lg leading-8  md:text-3xl md:leading-[48px];
+  }
+
+  .section_link {
+    @apply flex items-center w-max h-[40px]  md:gap-x-1 text-orange-300 font-Dana text-xl md:hover:bg-orange-300/20 rounded-md pr-3 pl-1 transition-colors;
+    letter-spacing: -1.3px;
+  }
+
+  /* */
+  .offer {
+    @apply relative;
+  }
+  .offer::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    @apply absolute inset-0 m-auto bg-red-500;
+    top: -2px;
+  }
+  /* !banner's style */
+  .category-banner-item1 {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.6) 33.85%,
+        rgba(245, 245, 245, 0.1) 100%
+      ),
+      url("../images/categories/category-right.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .category-banner-item2 {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.6) 33.85%,
+        rgba(245, 245, 245, 0.1) 100%
+      ),
+      url("../images/categories/category-left.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .swiper-button-next-custom,
+  .swiper-button-prev-custom {
+    @apply flex-center bg-white w-9 h-9 md:w-10 md:h-10 rounded-full hover:bg-gray-300 dark:hover:bg-white dark:bg-zinc-700 shadow-normal dark:hover:text-zinc-700 transition-all;
+  }
+  /* !Coffee-Banner */
+
+  .coffee-banner-container {
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+    @apply flex items-center justify-between flex-col gap-y-[35px] lg:flex-row lg:h-36 rounded-2xl pt-[34px] pb-8 px-3 sm:py-[25px] md:py-[23px] md:px-[44px];
+  }
+  .coffee-banner-item-box {
+    @apply h-[72px] w-[72px] sm:w-20 sm:h-20 md:h-[98px] md:w-[98px] bg-white rounded-2xl;
+  }
+  .coffee-banner-btn {
+    @apply flex items-center w-[90px] sm:w-[100px] md:w-[110px] text-white font-DanaMedium text-xs/normal md:text-sm/normal py-1 pr-[6px] md:mt-2 md:py-[6px] md:pr-[10px] -mr-[7px] sm:-mr-[12px] md:-mr-[12px] mt-1;
+    border-radius: 100px;
+    background: linear-gradient(270deg, #fdba74 0%, #fed7aa 100%);
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,5 +215,4 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
