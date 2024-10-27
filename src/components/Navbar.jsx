@@ -209,29 +209,77 @@ export default function Navbar() {
               <span className="text-zinc-600 dark:text-white">Basket</span>
             </div>
 
-            {/* Cart Content */}
-            <div className="space-y-4">
-              <div className="flex gap-x-2 items-center">
+            <div class="child:pb-5 child:mb-5">
+              {/* <!--//! Cart-Item --> */}
+              <div class="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10">
                 <Image
                   width={90}
                   height={90}
+                  class="w-[90px] h-[90px]"
                   src="/images/products/p1.png"
                   alt="logo"
-                  className="w-[90px] h-[90px]"
                 />
+
                 <div>
-                  <h4 className="text-sm text-zinc-700 dark:text-white">
-                    Espresso Coffee Bonmano Model Prisca 250g
+                  <h4 class="text-sm text-zinc-700 dark:text-white font-DanaMedium line-clamp-2">
+                    Bonmano Espresso Coffee, Prisca Model, 250g
                   </h4>
-                  <span className="text-xs text-teal-600 dark:text-emerald-500">
-                    14.3 $ Discount
-                  </span>
-                  <div className="text-lg text-zinc-700 dark:text-white">
-                    28.2 $
+                  <div class="mt-4">
+                    <span class="text-xs text-teal-600 font-Dana dark:text-emerald-500 tracking-tighter leading-6">
+                      23.2 $ discount
+                    </span>
+                    <div class="text-base text-zinc-700 dark:text-white font-DanaDemiBold">
+                      28.6
+                      <span class="text-xs font-Dana">$</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              {/* Additional items can go here */}
+
+              <div class="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10">
+                <Image
+                  width={90}
+                  height={90}
+                  class="w-[90px] h-[90px]"
+                  src="/images/products/p2.png"
+                  alt="product"
+                />
+
+                <div>
+                  <h4 class="text-sm text-zinc-700 dark:text-white font-DanaMedium line-clamp-2">
+                    Bonmano Espresso Coffee, Prisca Model, 250g
+                  </h4>
+                  <div class="mt-4">
+                    <span class="text-xs text-teal-600 font-Dana dark:text-emerald-500 tracking-tighter leading-6">
+                      23.2 $ discount
+                    </span>
+                    <div class="text-base text-zinc-700 dark:text-white font-DanaDemiBold">
+                      28.6
+                      <span class="text-xs font-Dana">$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <!--//! !Cart-Footer --> */}
+            <div class="py-8 mt-auto absolute bottom-0 flex justify-between items-end gap-x-4">
+              <Link
+                href="#"
+                class="flex items-center justify-center w-28 h-11 rounded-xl bg-teal-600 dark:bg-emerald-500 dark:hover:bg-teal-500 hover:bg-emerald-600 text-white font-Dana tracking-tightest text-lg"
+              >
+                Place Order
+              </Link>
+
+              <div>
+                <div class="text-xs text-gray-300 font-DanaMedium dark:text-white tracking-tighter leading-6">
+                  Payable Amount
+                </div>
+                <div class="flex items-center gap-x-1.5 text-base text-zinc-700 dark:text-white font-DanaDemiBold">
+                  85.3
+                  <span class="text-xs font-Dana">$</span>
+                </div>
+              </div>
             </div>
           </div>
         )}
