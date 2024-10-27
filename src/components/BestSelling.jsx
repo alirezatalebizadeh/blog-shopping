@@ -1,6 +1,7 @@
 "use client";
-import ProductItem from "./ProductItem";
+import Image from "next/image";
 import React, { useRef } from "react";
+import ProductItem from "./ProductItem";
 import HeaderSection from "./HeaderSection";
 //! Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,11 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 //!import required modules
-import { Navigation } from "swiper/modules";
-import { GoArrowSwitch, GoChevronLeft, GoChevronRight } from "react-icons/go";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { FaRegStar } from "react-icons/fa6";
-import Image from "next/image";
+import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 
 export default function BestSelling() {
   const swiperRef = useRef(null);
@@ -72,11 +69,9 @@ export default function BestSelling() {
         className="mySwiper"
       >
         {[1, 2, 3, 4, 5, 6, 7, 8].map((product, index) => (
-          <>
-            <SwiperSlide key={index}>
-              <ProductItem product={product} />
-            </SwiperSlide>
-          </>
+          <SwiperSlide key={index}>
+            <ProductItem product={product} />
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>

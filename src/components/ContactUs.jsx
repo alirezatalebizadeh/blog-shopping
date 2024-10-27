@@ -37,7 +37,7 @@ export default function ContactUs() {
 
               <Link
                 href="tel:+989036439883"
-                className="w-max h-[50px] md:w-[216px] flex-center text-sm/normal gap-x-2 rounded-[100px] border-[2px] border-orange-300 dark:border-orange-300 text-orange-300 px-2 md:px-6 md:py-4 transition  hover:bg-orange-300 hover:text-white hover:border-white dark:hover:border-black"
+                className=" h-[50px] md:w-[216px] flex-center text-sm/normal gap-x-2 rounded-[100px] border-[2px] border-orange-300 dark:border-orange-300 text-orange-300 px-2 md:px-6 md:py-4 transition  hover:bg-orange-300 hover:text-white hover:border-white dark:hover:border-black"
               >
                 <FiPhone className="w-[22px] h-[22px] md:w-8 md:h-8 text-black/70 dark:text-white" />
                 <span>Place an Order by Phone</span>

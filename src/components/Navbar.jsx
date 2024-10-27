@@ -70,17 +70,17 @@ export default function Navbar() {
             {/* Nav Menu Items */}
             <ul className="space-y-6 text-zinc-600 dark:text-white">
               <li className="flex items-center rounded-md mb-4 pr-0 h-10 bg-orange-200/20 text-orange-300">
-                <a href="#" className="flex items-center gap-x-2">
+                <Link href="#" className="flex items-center gap-x-2">
                   <TiHomeOutline className="w-5 h-5" />
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <div className="flex items-center justify-between">
-                  <a href="#" className="flex items-center gap-x-2">
+                  <Link href="#" className="flex items-center gap-x-2">
                     <HiOutlineShoppingBag className="w-5 h-5" />
                     Shop
-                  </a>
+                  </Link>
                   <FaChevronDown
                     onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}
                     className="w-5 h-5 cursor-pointer"
@@ -180,10 +180,10 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-              <a href="#" className="flex items-center gap-1 text-orange-300">
+              <Link href="#" className="flex items-center gap-1 text-orange-300">
                 Cart
                 <AiOutlineShoppingCart className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
           </div>
         )}
@@ -403,7 +403,7 @@ export default function Navbar() {
                   {/* <!-- Cart Header --> */}
                   <div className="flex items-center justify-between text-xs font-DanaMedium">
                     <span className="text-gray-300"> 1 مورد</span>
-                    <a
+                    <Link
                       href="#"
                       className="flex items-center h-5 text-orange-300"
                     >
@@ -411,7 +411,7 @@ export default function Navbar() {
                       <svg className="w-5 h-5">
                         <use href="#chevron-left"></use>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
 
                   {/* <!-- Cart body --> */}
@@ -505,12 +505,12 @@ export default function Navbar() {
                         <span className="text-sm font-Dana">$</span>
                       </div>
                     </div>
-                    <a
+                    <Link
                       href="#"
                       className="flex items-center justify-center w-36 h-14 rounded-xl bg-teal-600 dark:bg-emerald-500 dark:hover:bg-teal-500 hover:bg-emerald-600 text-white font-Dana tracking-tightest text-lg"
                     >
                       order
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -529,13 +529,13 @@ export default function Navbar() {
             {/* <!-- devide border --> */}
             <span className="block w-[1px] h-14 bg-orange-200"></span>
             {/* !<!-- login & sign up --> */}
-            <a
+            <Link
               href="#"
               className="flex gap-x-2.5 items-center text-xl text-orange-200 tracking-tightest"
             >
               <span className="hidden xl:inline-block">Login | Sign Up </span>
               <FaArrowRightFromBracket className="w-8 h-8 transform " />
-            </a>
+            </Link>
           </div>
         </div>
       </header>
