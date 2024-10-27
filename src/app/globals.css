@@ -172,13 +172,13 @@
   .coffee-banner-container {
     background: linear-gradient(90deg, #10b981 0%, #059669 100%);
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
-    @apply flex items-center justify-between flex-col gap-y-[35px] lg:flex-row lg:h-36 rounded-2xl pt-[34px] pb-8 px-3 sm:py-[25px] md:py-[23px] md:px-[44px];
+    @apply flex items-start sm:items-center justify-between flex-col gap-y-[35px] lg:flex-row lg:h-36 rounded-2xl pt-[34px] pb-8 px-3 sm:py-[25px] md:py-[23px] md:px-[44px];
   }
   .coffee-banner-item-box {
-    @apply h-[72px] w-[72px] sm:w-20 sm:h-20 md:h-[98px] md:w-[98px] bg-white rounded-2xl;
+    @apply h-[98px] w-[72px] sm:w-20 sm:h-20 md:h-[98px] md:w-[98px] bg-white rounded-2xl;
   }
   .coffee-banner-btn {
-    @apply flex items-center w-[90px] sm:w-[100px] md:w-[110px] text-white font-DanaMedium text-xs/normal md:text-sm/normal py-1 pr-[6px] md:mt-2 md:py-[6px] md:pr-[10px] -mr-[7px] sm:-mr-[12px] md:-mr-[12px] mt-1;
+    @apply flex items-center w-[100px] md:w-[110px] text-white font-DanaMedium text-xs/normal md:text-sm/normal py-1 pr-[6px] md:mt-2 md:py-[6px] md:pr-[10px] -mr-[7px] sm:-mr-[12px] md:-mr-[12px] mt-1;
     border-radius: 100px;
     background: linear-gradient(270deg, #fdba74 0%, #fed7aa 100%);
   }

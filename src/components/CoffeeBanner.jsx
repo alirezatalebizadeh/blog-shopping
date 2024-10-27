@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import { GoChevronRight } from "react-icons/go";
 
 export default function CoffeeBanner() {
   return (
-    <div className="md:my-20">
+    <div className="md:my-20 overflow-hidden">
       <div className="container">
         <div className="coffee-banner-container">
           <div className="flex items-center gap-x-3 md:gap-x-6 text-white">
@@ -24,11 +25,11 @@ export default function CoffeeBanner() {
             </div>
           </div>
 
-          <div className="flex gap-x-[19px] sm:gap-[50px] xl:gap-x-[120px] text-center items-end">
+          <div className="flex flex-col items-start gap-5 sm:flex-row gap-x-[19px] sm:gap-[50px] xl:gap-x-[120px] text-center sm:items-end">
             <div className="flex gap-x-2 md:gap-x-5 text-center sm:gap-x-4">
               <div className="coffee-banner-item-box">
                 <Image
-                  src="/images/benner1.jpeg"
+                  src="/images/banner1.svg"
                   width={48}
                   height={48}
                   loading="lazy"
@@ -40,11 +41,8 @@ export default function CoffeeBanner() {
                 </span>
               </div>
               <div className="coffee-banner-item-box">
-                <svg className="h-10 w-10 md:h-[48px] md:w-[48px] mx-auto mt-[6px] md:mt-5">
-                  <use href="#Activity"></use>
-                </svg>
                 <Image
-                  src="/images/benner2.jpeg"
+                  src="/images/banner2.svg"
                   width={48}
                   height={48}
                   loading="lazy"
@@ -57,7 +55,7 @@ export default function CoffeeBanner() {
               </div>
               <div className="coffee-banner-item-box">
                 <Image
-                  src="/images/benner3.jpeg"
+                  src="/images/banner3.svg"
                   width={48}
                   height={48}
                   loading="lazy"
@@ -77,11 +75,9 @@ export default function CoffeeBanner() {
               <span className="text-xs/normal md:text-sm/normal font-DanaDemiBold">
                 Your Points
               </span>
-              <a href="#" className="coffee-banner-btn">
+              <a href="#" className="coffee-banner-btn pl-1">
                 <span>Claim Reward</span>
-                <svg className="w-5 h-5 md:h-6 md:w-6">
-                  <use href="#chevron-left"></use>
-                </svg>
+                <GoChevronRight className="w-5 h-5 md:h-6 md:w-6" />
               </a>
             </div>
           </div>
