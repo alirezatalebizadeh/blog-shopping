@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Image from "next/image";
 import { FiPhoneCall } from "react-icons/fi";
@@ -20,12 +20,30 @@ export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(
-    typeof window !== "undefined" && localStorage.getItem("theme") === "dark"
-  );
+  // const [isDarkMode, setIsDarkMode] = useState(
+  //   typeof window !== "undefined" && localStorage.getItem("theme") === "dark"
+  // );
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
+    }
+  }, []);
 
   //! Toggle the theme
   const toggleTheme = () => {
+    // if (isDarkMode) {
+    //   document.documentElement.classList.remove("dark");
+    //   localStorage.setItem("theme", "light");
+    // } else {
+    //   document.documentElement.classList.add("dark");
+    //   localStorage.setItem("theme", "dark");
+    // }
+    // setIsDarkMode(!isDarkMode);
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
@@ -169,7 +187,10 @@ export default function Navbar() {
                 className="flex items-center cursor-pointer text-orange-300"
               >
                 {isDarkMode ? (
-                  <div className="flex items-center gap-1">
+                  <div
+                    className="flex items-center gap-1"
+                    onClick={toggleTheme}
+                  >
                     Light Mode
                     <IoIosSunny className="w-5 h-5" />
                   </div>
@@ -180,7 +201,10 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-              <Link href="#" className="flex items-center gap-1 text-orange-300">
+              <Link
+                href="#"
+                className="flex items-center gap-1 text-orange-300"
+              >
                 Cart
                 <AiOutlineShoppingCart className="w-5 h-5" />
               </Link>
