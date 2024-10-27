@@ -31,23 +31,45 @@ export default function BestSelling() {
             className="swiper-button-prev-custom"
             onClick={() => swiperRef.current?.slidePrev()}
           >
-            <GoChevronLeft classNameName="w-5 h-5 md:w-[26px] md:h-[26px] text-zinc-700 dark:hover:bg-white dark:hover:text-zinc-700 dark:text-white rotate-180" />
+            <GoChevronRight className="w-5 h-5 md:w-[26px] md:h-[26px] text-zinc-700 dark:hover:bg-white dark:hover:text-zinc-700 dark:text-white rotate-180" />
           </span>
           <span
             className="swiper-button-next-custom"
             onClick={() => swiperRef.current?.slideNext()}
           >
-            <GoChevronRight classNameName="w-5 h-5 md:w-[26px] md:h-[26px] text-zinc-700 dark:hover:bg-white dark:hover:text-zinc-700 dark:text-white rotate-180" />
+            <GoChevronLeft className="w-5 h-5 md:w-[26px] md:h-[26px] text-zinc-700 dark:hover:bg-white dark:hover:text-zinc-700 dark:text-white rotate-180" />
           </span>
         </div>
       </div>
 
       <Swiper
         slidesPerView={2}
-        spaceBetween={30}
+        spaceBetween={12}
         loop={true}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        classNameName="mySwiper"
+        breakpoints={{
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1560: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
+        className="mySwiper"
       >
         {[1, 2, 3, 4, 5, 6, 7, 8].map((product, index) => (
           <>
