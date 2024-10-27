@@ -178,9 +178,7 @@
     @apply h-[98px] w-[72px] sm:w-20 sm:h-20 md:h-[98px] md:w-[98px] bg-white rounded-2xl;
   }
   .coffee-banner-btn {
-    @apply flex items-center w-[100px] md:w-[110px] text-white font-DanaMedium text-xs/normal md:text-sm/normal py-1 pr-[6px] md:mt-2 md:py-[6px] md:pr-[10px] -mr-[7px] sm:-mr-[12px] md:-mr-[12px] mt-1;
-    border-radius: 100px;
-    background: linear-gradient(270deg, #fdba74 0%, #fed7aa 100%);
+    @apply flex items-center text-white font-DanaMedium text-xs md:text-sm py-1 pl-[6px] md:mt-2 md:py-[6px] md:pr-[10px] -mr-[7px] sm:-mr-[12px] md:-mr-[12px] mt-1 rounded-full bg-gradient-to-l from-[#fdba74] to-[#fed7aa] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-[#000000] transition-all duration-300;
   }
 }
 

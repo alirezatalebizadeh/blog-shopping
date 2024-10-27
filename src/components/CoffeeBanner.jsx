@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { GoChevronRight } from "react-icons/go";
 
@@ -75,10 +76,10 @@ export default function CoffeeBanner() {
               <span className="text-xs/normal md:text-sm/normal font-DanaDemiBold">
                 Your Points
               </span>
-              <a href="#" className="coffee-banner-btn pl-1">
+              <Link href="#"  className="coffee-banner-btn p-1">
                 <span>Claim Reward</span>
                 <GoChevronRight className="w-5 h-5 md:h-6 md:w-6" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

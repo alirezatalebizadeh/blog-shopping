@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { FiPhoneCall } from "react-icons/fi";
 
 export default function ContactUs() {
   return (
@@ -32,19 +34,24 @@ export default function ContactUs() {
                 paired with hot coffee. Our stylish interior and friendly staff
                 will make your day!
               </p>
-              <a
+              {/* <Link
                 href="#"
-                className="w-[180px] h-[50px] md:w-[216px] flex-center text-sm/normal gap-x-2 rounded-[100px] border-[2px] border-orange-300 dark:border-orange-300 text-orange-300 md:px-6 md:py-4"
+                className="w-max h-[50px] md:w-[216px] flex-center text-sm/normal gap-x-2 rounded-[100px] border-[2px] border-orange-300 dark:border-orange-300 text-orange-300 px-2 md:px-6 md:py-4"
               >
-                <svg className="w-[22px] h-[22px] md:w-8 md:h-8">
-                  <use href="#phone"></use>
-                </svg>
+                <FiPhoneCall className="w-[22px] h-[22px] md:w-8 md:h-8 text-black/70" />
                 <span>Place an Order by Phone</span>
-              </a>
+              </Link> */}
+              <Link
+                href="#"
+                className="w-max h-[50px] md:w-[216px] flex-center text-sm/normal gap-x-2 rounded-[100px] border-[2px] border-orange-300 dark:border-orange-300 text-orange-300 px-2 md:px-6 md:py-4 transition  hover:bg-orange-300 hover:text-white hover:border-white dark:hover:border-black"
+              >
+                <FiPhoneCall className="w-[22px] h-[22px] md:w-8 md:h-8 text-black/70 dark:text-white" />
+                <span>Place an Order by Phone</span>
+              </Link>
             </div>
           </div>
 
-          {/* <!-- Services Section --> */}
+          {/* <!-- //!Services Section --> */}
           <div className="relative mt-[76px] md:mt-[118px] gap-10 flex items-start justify-between flex-wrap overflow-hidden">
             {/* <!--//! Service 1 --> */}
             <div className="md:flex items-center text-center gap-x-4">
