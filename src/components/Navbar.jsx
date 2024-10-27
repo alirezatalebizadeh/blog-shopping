@@ -308,6 +308,7 @@ export default function Navbar() {
           </div>
         )}
       </div>
+
       {/* //!{headers for desktop} */}
       <header className="fixed top-9 left-0 right-0 z-50 hidden md:flex items-center bg-black/50 p-5 lg:px-10 h-24 w-[98%] lg:w-[90%] mx-auto rounded-3xl backdrop-blur-[6px]">
         <div className="flex justify-between w-full">
@@ -335,7 +336,7 @@ export default function Navbar() {
                 >
                   shop
                 </Link>
-                {/* <!--! submenu --> */}
+                {/* <!--//! submenu --> */}
                 <div className="absolute top-full shadow-normal w-52 space-y-4 bg-white dark:bg-zinc-700 p-6 rounded-2xl text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 tracking-normal transition-all delay-75 opacity-0 invisible group-hover:opacity-100 group-hover:visible child:inline-block child:transition-colors child-hover:text-orange-300 child:leading-[20px]">
                   <Link
                     href="#"
@@ -420,7 +421,7 @@ export default function Navbar() {
                   onClick={() => setIsCartOpen(true)}
                   className="py-3 cursor-pointer"
                 >
-                  <AiOutlineShoppingCart className="inline-block dark:hidden w-8 h-8" />
+                  <AiOutlineShoppingCart className="inline-block  w-8 h-8" />
                 </div>
                 {/* <!-- cart box --> */}
                 <div className="absolute top-full left-0 w-[400px] shadow-normal bg-white dark:bg-zinc-700 p-5 rounded-2xl text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible delay-75">
@@ -544,7 +545,7 @@ export default function Navbar() {
                 className="cursor-pointer toggle-theme"
               >
                 {isDarkMode ? (
-                  <IoIosSunny className="inline-block dark:hidden w-8 h-8" />
+                  <IoIosSunny className="inline-block  w-8 h-8" />
                 ) : (
                   <IoMoonOutline className="inline-block dark:hidden w-8 h-8" />
                 )}
