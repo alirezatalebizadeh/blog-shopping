@@ -31,7 +31,7 @@ export default function Products() {
                 </span>
               </div>
               <h2 className="text-zinc-700 dark:text-white font-DanaMedium text-sm/[28px] md:h-14 md:text-xl/[28px] mt-2 mb-1.5 md:mt-5 md:mb-2.5 line-clamp-2">
-                قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                Ben Mano Turkish coffee, 250 grams, second line
               </h2>
               <div className="flex items-center gap-x-2.5 md:justify-center">
                 <div className="text-teal-600 text-right">
