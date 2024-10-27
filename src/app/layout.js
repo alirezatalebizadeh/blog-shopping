@@ -1,4 +1,6 @@
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "coffee shop | hotCoffee",
@@ -8,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-Dana bg-gray-100 dark:bg-zinc-800">{children}</body>
+      <body className="font-Dana bg-gray-100 dark:bg-zinc-800">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

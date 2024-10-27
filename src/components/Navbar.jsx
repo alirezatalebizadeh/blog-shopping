@@ -13,9 +13,11 @@ import {
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { IoIosSunny } from "react-icons/io";
 import { TiHomeOutline } from "react-icons/ti";
-
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
+
+
+
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -186,20 +188,21 @@ export default function Navbar() {
             <div className="space-y-4">
               <div className="flex gap-x-2 items-center">
                 <Image
-                  width={40}
-                  height={40}
+                  width={90}
+                  height={90}
                   src="/images/products/p1.png"
                   alt="logo"
+                  className="w-[90px] h-[90px]"
                 />
                 <div>
                   <h4 className="text-sm text-zinc-700 dark:text-white">
                     Espresso Coffee Bonmano Model Prisca 250g
                   </h4>
                   <span className="text-xs text-teal-600 dark:text-emerald-500">
-                    14,500 Toman Discount
+                    14.3 $ Discount
                   </span>
                   <div className="text-lg text-zinc-700 dark:text-white">
-                    175,000 Toman
+                    28.2 $
                   </div>
                 </div>
               </div>
