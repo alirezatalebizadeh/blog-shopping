@@ -15,7 +15,7 @@ export default function Products() {
         {/* //!products */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5 pb-8 md:pb-20">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((product) => (
-            <div className="bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-2 md:p-5">
+            <div key={index} className="bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-2 md:p-5">
               <div className="relative overflow-hidden">
                 <Image
                   src="/images/products/p1.png"
