@@ -58,11 +58,7 @@
   }
   /* styleing to sub menu */
   .submenu {
-    @apply hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
-  }
-
-  .submenu-open {
-    @apply flex;
+    @apply flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
   }
 
   .summenu_item_active {

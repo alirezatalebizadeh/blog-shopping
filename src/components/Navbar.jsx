@@ -90,14 +90,42 @@ export default function Navbar() {
                 {/* Submenu */}
                 {isSubmenuOpen && (
                   <div className="submenu ml-5 mt-2 space-y-2">
-                    <Link href="#">Special Coffee</Link>
-                    <Link href="#">World-Class Special</Link>
-                    <Link href="#" className="submenu_item_active">
+                    <Link
+                      href="#"
+                      className="hover:text-orange-300 transition-colors block"
+                    >
+                      Special Coffee
+                    </Link>
+                    <Link
+                      href="#"
+                      className="hover:text-orange-300 transition-colors block"
+                    >
+                      Global Special
+                    </Link>
+                    <Link
+                      href="#"
+                      className="hover:text-orange-300 transition-colors block"
+                    >
                       Premium Coffee
                     </Link>
-                    <Link href="#">Commercial Blends</Link>
-                    <Link href="#">Zino Brazilian Coffee</Link>
-                    <Link href="#">Coffee Capsules</Link>
+                    <Link
+                      href="#"
+                      className="hover:text-orange-300 transition-colors block"
+                    >
+                      Commercial Blends
+                    </Link>
+                    <Link
+                      href="#"
+                      className="hover:text-orange-300 transition-colors block"
+                    >
+                      Zino Brazilian Coffee
+                    </Link>
+                    <Link
+                      href="#"
+                      className="hover:text-orange-300 transition-colors block"
+                    >
+                      Coffee Capsules
+                    </Link>
                   </div>
                 )}
               </li>
@@ -237,25 +265,75 @@ export default function Navbar() {
                 </Link>
                 {/* <!--! submenu --> */}
                 <div className="absolute top-full shadow-normal w-52 space-y-4 bg-white dark:bg-zinc-700 p-6 rounded-2xl text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 tracking-normal transition-all delay-75 opacity-0 invisible group-hover:opacity-100 group-hover:visible child:inline-block child:transition-colors child-hover:text-orange-300 child:leading-[20px]">
-                  <Link href="#">Special Coffee</Link>
-                  <Link href="#">Global Special</Link>
-                  <Link href="#">Premium Coffee</Link>
-                  <Link href="#">Commercial Blends</Link>
-                  <Link href="#">Zino Brazilian Coffee</Link>
-                  <Link href="#">Coffee Capsules</Link>
+                  <Link
+                    href="#"
+                    className="hover:text-orange-300 transition-colors block"
+                  >
+                    Special Coffee
+                  </Link>
+                  <Link
+                    href="#"
+                    className="hover:text-orange-300 transition-colors block"
+                  >
+                    Global Special
+                  </Link>
+                  <Link
+                    href="#"
+                    className="hover:text-orange-300 transition-colors block"
+                  >
+                    Premium Coffee
+                  </Link>
+                  <Link
+                    href="#"
+                    className="hover:text-orange-300 transition-colors block"
+                  >
+                    Commercial Blends
+                  </Link>
+                  <Link
+                    href="#"
+                    className="hover:text-orange-300 transition-colors block"
+                  >
+                    Zino Brazilian Coffee
+                  </Link>
+                  <Link
+                    href="#"
+                    className="hover:text-orange-300 transition-colors block"
+                  >
+                    Coffee Capsules
+                  </Link>
                 </div>
               </li>
               <li>
-                <Link href="#">dictionary</Link>
+                <Link
+                  href="#"
+                  className="hover:text-orange-300  transition-colors"
+                >
+                  dictionary
+                </Link>
               </li>
               <li>
-                <Link href="#">blog</Link>
+                <Link
+                  href="#"
+                  className="hover:text-orange-300  transition-colors"
+                >
+                  blog
+                </Link>
               </li>
               <li>
-                <Link href="#">about me</Link>
+                <Link
+                  href="#"
+                  className="hover:text-orange-300  transition-colors"
+                >
+                  about me
+                </Link>
               </li>
               <li>
-                <Link href="#">contact us</Link>
+                <Link
+                  href="#"
+                  className="hover:text-orange-300  transition-colors"
+                >
+                  contact us
+                </Link>
               </li>
             </ul>
           </nav>
