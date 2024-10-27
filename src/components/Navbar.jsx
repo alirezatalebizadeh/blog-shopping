@@ -16,9 +16,6 @@ import { TiHomeOutline } from "react-icons/ti";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
 
-
-
-
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -297,8 +294,8 @@ export default function Navbar() {
                     <div className="flex gap-x-2.5 py-5">
                       <div>
                         <Image
-                          width={30}
-                          height={30}
+                          width={90}
+                          height={90}
                           className="w-30 h-30"
                           src="/images/products/p1.png"
                           alt="logo"
@@ -310,11 +307,11 @@ export default function Navbar() {
                         </h4>
                         <div className="mt-5">
                           <span className="text-xs text-teal-600 font-DanaMedium dark:text-emerald-500 tracking-tighter leading-6">
-                            14,500 Toman Discount
+                            14.3 $ Discount
                           </span>
                           <div className="text-xl text-zinc-700 dark:text-white font-DanaDemiBold">
-                            175,000
-                            <span className="text-sm font-Dana">Toman</span>
+                            28.3
+                            <span className="text-sm font-Dana">$</span>
                           </div>
                         </div>
                       </div>
@@ -322,8 +319,8 @@ export default function Navbar() {
                     <div className="flex gap-x-2.5 py-5">
                       <div>
                         <Image
-                          width={30}
-                          height={30}
+                          width={90}
+                          height={90}
                           className="w-30 h-30"
                           src="/images/products/p1.png"
                           alt="logo"
@@ -335,11 +332,11 @@ export default function Navbar() {
                         </h4>
                         <div className="mt-5">
                           <span className="text-xs text-teal-600 font-DanaMedium dark:text-emerald-500 tracking-tighter leading-6">
-                            14,500 Toman Discount
+                            14.3 $ Discount
                           </span>
                           <div className="text-xl text-zinc-700 dark:text-white font-DanaDemiBold">
-                            175,000
-                            <span className="text-sm font-Dana">Toman</span>
+                            28.3
+                            <span className="text-sm font-Dana">$</span>
                           </div>
                         </div>
                       </div>
@@ -347,8 +344,8 @@ export default function Navbar() {
                     <div className="flex gap-x-2.5 py-5">
                       <div>
                         <Image
-                          width={30}
-                          height={30}
+                          width={90}
+                          height={90}
                           className="w-30 h-30"
                           src="/images/products/p1.png"
                           alt="logo"
@@ -360,11 +357,11 @@ export default function Navbar() {
                         </h4>
                         <div className="mt-5">
                           <span className="text-xs text-teal-600 font-DanaMedium dark:text-emerald-500 tracking-tighter leading-6">
-                            14,500 Toman Discount
+                            14.3 $ Discount
                           </span>
                           <div className="text-xl text-zinc-700 dark:text-white font-DanaDemiBold">
-                            175,000
-                            <span className="text-sm font-Dana">Toman</span>
+                            28.3
+                            <span className="text-sm font-Dana">$</span>
                           </div>
                         </div>
                       </div>
