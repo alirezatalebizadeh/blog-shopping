@@ -1,4 +1,4 @@
-import { Children, Suspense } from "react";
+import {  Suspense } from "react";
 import "./globals.css";
 import LoadingComponent from "@/components/LoadingComponent";
 import ClientWrapper from "./ClientWrapper";

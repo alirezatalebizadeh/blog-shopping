@@ -133,7 +133,7 @@ export default function page() {
             </Link>
             <span>/</span>
             <Link
-              href="/home"
+              href="/"
               className="text-blue-500 font-semibold hover:underline"
             >
               Home
