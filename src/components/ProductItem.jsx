@@ -5,8 +5,6 @@ import { FaRegStar } from "react-icons/fa6";
 import { GoArrowSwitch } from "react-icons/go";
 
 export default function productItem({ product }) {
-  console.log("product", product);
-
   return (
     <div className="bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-2 md:p-5">
       <div className="relative overflow-hidden">

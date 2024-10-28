@@ -14,7 +14,7 @@ export default async function Products({ props }) {
   }
 
   const products = await response.json();
-  console.log("products componenet", products); //! true
+  // console.log("products componenet", products);
 
   return (
     <section className="products pt-8 md:pt-24 lg:pt-48">
@@ -24,12 +24,6 @@ export default async function Products({ props }) {
 
         {/* //!products */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5 pb-8 md:pb-20">
-          {/* {[1, 2, 3, 4, 5, 6, 7, 8].map((product, index) => (
-            <Suspense fallback="Loading ..." key={index}>
-              <ProductItem key={index} />
-            </Suspense>
-          ))} */}
-
           {products.slice(0, 10).map((product) => (
             <Suspense fallback="Loading ..." key={product._id}>
               <ProductItem product={product} />

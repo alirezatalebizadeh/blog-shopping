@@ -1,18 +1,36 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
-//! Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-//! Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
-//!import required modules
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 
 export default function BestSelling() {
+  const [products, setProducts] = useState([]);
   const swiperRef = useRef(null);
+
+  // Fetch coffee products from the API
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("https://fake-coffee-api.vercel.app/api", {
+          cache: "no-store",
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch coffee products");
+        }
+
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   return (
     <div className="container mt-8 mb-10 md:my-20">
@@ -66,7 +84,7 @@ export default function BestSelling() {
         }}
         className="mySwiper"
       >
-        {[1, 2, 3, 4, 5, 6, 7, 8].map((product, index) => (
+        {products.slice(0, 10).map((product, index) => (
           <SwiperSlide key={index}>
             <ProductItem product={product} />
           </SwiperSlide>
