@@ -8,7 +8,7 @@ import { LuMapPin } from "react-icons/lu";
 export default function Footer() {
   return (
     <>
-      <div className="bg-zinc-700 text-gray-300">
+      <div className="bg-zinc-700 text-gray-300 mt-5">
         <div className="flex flex-wrap gap-x-[50px] justify-between w-[98%] lg:w-[90%] mx-auto px-4 md:px-[96px] pt-8 md:pt-[62px] pb-[40px] md:pb-[54px]">
           <div className="pt-10 md:pt-[26px]">
             <div className="flex items-center gap-x-5 text-gray-300">

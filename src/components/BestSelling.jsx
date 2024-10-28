@@ -1,8 +1,6 @@
 "use client";
-import Image from "next/image";
 import React, { useRef } from "react";
 import ProductItem from "./ProductItem";
-import HeaderSection from "./HeaderSection";
 //! Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

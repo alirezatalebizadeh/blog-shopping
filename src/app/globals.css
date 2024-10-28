@@ -171,7 +171,7 @@
     @apply flex items-start sm:items-center justify-between flex-col gap-y-[35px] lg:flex-row lg:h-36 rounded-2xl pt-[34px] pb-8 px-3 sm:py-[25px] md:py-[23px] md:px-[44px];
   }
   .coffee-banner-item-box {
-    @apply  w-[72px] sm:w-20  md:w-[98px] bg-white rounded-2xl;
+    @apply w-[72px] sm:w-20  md:w-[98px] bg-white rounded-2xl;
   }
   .coffee-banner-btn {
     @apply flex items-center text-white font-DanaMedium text-xs md:text-sm py-1 pl-[6px] md:mt-2 md:py-[6px] md:pr-[10px] -mr-[7px] sm:-mr-[12px] md:-mr-[12px] mt-1 rounded-full bg-gradient-to-l from-[#fdba74] to-[#fed7aa] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-[#000000] transition-all duration-300;
@@ -199,4 +199,19 @@
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+.oading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #333;
+  z-index: 1000;
 }

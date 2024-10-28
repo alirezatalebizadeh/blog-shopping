@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { Suspense } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegStar } from "react-icons/fa6";
 import { GoArrowSwitch } from "react-icons/go";
