@@ -88,7 +88,7 @@ export default function Navbar() {
             {/* Nav Menu Items */}
             <ul className="space-y-6 text-zinc-600 dark:text-white">
               <li className="flex items-center rounded-md mb-4 pr-0 h-10 bg-orange-200/20 text-orange-300">
-                <Link href="#" className="flex items-center gap-x-2">
+                <Link href="/" className="flex items-center gap-x-2">
                   <TiHomeOutline className="w-5 h-5" />
                   Home
                 </Link>
@@ -148,25 +148,25 @@ export default function Navbar() {
                 )}
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-x-2">
+                <Link href="/dictionary" className="flex items-center gap-x-2">
                   <IoChatboxEllipsesOutline className="w-5 h-5" />
                   Dictionary
                 </Link>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-x-2">
+                <Link href="/blog" className="flex items-center gap-x-2">
                   <IoDocumentTextOutline className="w-5 h-5" />
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-x-2">
+                <Link href="/about" className="flex items-center gap-x-2">
                   <AiOutlineShoppingCart className="w-5 h-5" />
                   About Me
                 </Link>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-x-2">
+                <Link href="/contact" className="flex items-center gap-x-2">
                   <FiPhoneCall className="w-5 h-5" />
                   Contact Us
                 </Link>
@@ -176,7 +176,7 @@ export default function Navbar() {
             {/* Nav Footer */}
             <div className="mt-8 border-t border-gray-100 dark:border-white/10 pt-5 space-y-6">
               <Link
-                href="/"
+                href="/login"
                 className="flex gap-1 items-center text-orange-300"
               >
                 Login | Sign Up
@@ -325,7 +325,7 @@ export default function Navbar() {
             {/* <!-- !menu --> */}
             <ul className="flex gap-x-3 lg:gap-x-9 items-center text-xl text-gray-300 tracking-tightest h-full">
               <li>
-                <Link href="#" className="font-DanaMedium text-orange-200">
+                <Link href="/" className="font-DanaMedium text-orange-200">
                   Home
                 </Link>
               </li>
@@ -378,7 +378,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/dictionary"
                   className="hover:text-orange-300  transition-colors"
                 >
                   dictionary
@@ -386,7 +386,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/blog"
                   className="hover:text-orange-300  transition-colors"
                 >
                   blog
@@ -394,7 +394,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="hover:text-orange-300  transition-colors"
                 >
                   about me
@@ -402,7 +402,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="hover:text-orange-300  transition-colors"
                 >
                   contact us
@@ -555,7 +555,7 @@ export default function Navbar() {
             <span className="block w-[1px] h-14 bg-orange-200"></span>
             {/* !<!-- login & sign up --> */}
             <Link
-              href="/"
+              href="/login"
               className="flex gap-x-2.5 items-center text-xl text-orange-200 tracking-tightest"
             >
               <span className="hidden xl:inline-block">Login | Sign Up </span>
