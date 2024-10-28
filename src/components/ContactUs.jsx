@@ -7,12 +7,12 @@ export default function ContactUs() {
   return (
     <div className="mb-[76px] md:mb-[118px]">
       <div className="container">
-        <div className="">
+        <div>
           <div className="flex flex-col gap-y-8 sm:flex-row gap-x-[10px] items-start">
             <Image
               width={295}
               height={305}
-              src="./images/contact.png"
+              src="/images/contact.png"
               className="w-[296px] h-305px mx-auto"
               alt="contact us"
             />

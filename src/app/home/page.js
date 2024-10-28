@@ -9,13 +9,7 @@ import BestSelling from "@/components/BestSelling";
 import { Suspense } from "react";
 import LoadingComponent from "@/components/LoadingComponent";
 
-export default function Home() {
-  async function fetchDataFromServer() {
-    await new Promise((resolve) => setTimeout(resolve, 3000)); // ۳ ثانیه تاخیر
-    const response = await fetch("https://example.com/api/data");
-    return response.json();
-  }
-  
+export default async function Home() {
   return (
     <Suspense fallback={<LoadingComponent />}>
       <Hero />

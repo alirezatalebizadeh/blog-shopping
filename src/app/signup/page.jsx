@@ -20,9 +20,9 @@ export default function page() {
                 className="w-5 h-5 text-gray-400"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M8 0a5 5 0 1 0 0 10A5 5 0 0 0 8 0zM3.667 9.141A7.03 7.03 0 0 1 8 12c1.36 0 2.613-.382 3.668-1.048A6.977 6.977 0 0 0 8 10a6.977 6.977 0 0 0-4.333 1.141z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               <input
@@ -67,9 +67,9 @@ export default function page() {
                 className="w-5 h-5 text-gray-400"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               <input
@@ -92,9 +92,9 @@ export default function page() {
                 className="w-5 h-5 text-gray-400"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               <input

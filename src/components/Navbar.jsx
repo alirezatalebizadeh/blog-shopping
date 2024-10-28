@@ -176,7 +176,7 @@ export default function Navbar() {
             {/* Nav Footer */}
             <div className="mt-8 border-t border-gray-100 dark:border-white/10 pt-5 space-y-6">
               <Link
-                href="#"
+                href="/"
                 className="flex gap-1 items-center text-orange-300"
               >
                 Login | Sign Up
@@ -233,53 +233,53 @@ export default function Navbar() {
               <span className="text-zinc-600 dark:text-white">Basket</span>
             </div>
 
-            <div class="child:pb-5 child:mb-5">
+            <div className="child:pb-5 child:mb-5">
               {/* <!--//! Cart-Item --> */}
-              <div class="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10">
+              <div className="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10">
                 <Image
                   width={90}
                   height={90}
-                  class="w-[90px] h-[90px]"
+                  className="w-[90px] h-[90px]"
                   src="/images/products/p1.png"
                   alt="logo"
                 />
 
                 <div>
-                  <h4 class="text-sm text-zinc-700 dark:text-white font-DanaMedium line-clamp-2">
+                  <h4 className="text-sm text-zinc-700 dark:text-white font-DanaMedium line-clamp-2">
                     Bonmano Espresso Coffee, Prisca Model, 250g
                   </h4>
-                  <div class="mt-4">
-                    <span class="text-xs text-teal-600 font-Dana dark:text-emerald-500 tracking-tighter leading-6">
+                  <div className="mt-4">
+                    <span className="text-xs text-teal-600 font-Dana dark:text-emerald-500 tracking-tighter leading-6">
                       23.2 $ discount
                     </span>
-                    <div class="text-base text-zinc-700 dark:text-white font-DanaDemiBold">
+                    <div className="text-base text-zinc-700 dark:text-white font-DanaDemiBold">
                       28.6
-                      <span class="text-xs font-Dana">$</span>
+                      <span className="text-xs font-Dana">$</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10">
+              <div className="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10">
                 <Image
                   width={90}
                   height={90}
-                  class="w-[90px] h-[90px]"
+                  className="w-[90px] h-[90px]"
                   src="/images/products/p2.png"
                   alt="product"
                 />
 
                 <div>
-                  <h4 class="text-sm text-zinc-700 dark:text-white font-DanaMedium line-clamp-2">
+                  <h4 className="text-sm text-zinc-700 dark:text-white font-DanaMedium line-clamp-2">
                     Bonmano Espresso Coffee, Prisca Model, 250g
                   </h4>
-                  <div class="mt-4">
-                    <span class="text-xs text-teal-600 font-Dana dark:text-emerald-500 tracking-tighter leading-6">
+                  <div className="mt-4">
+                    <span className="text-xs text-teal-600 font-Dana dark:text-emerald-500 tracking-tighter leading-6">
                       23.2 $ discount
                     </span>
-                    <div class="text-base text-zinc-700 dark:text-white font-DanaDemiBold">
+                    <div className="text-base text-zinc-700 dark:text-white font-DanaDemiBold">
                       28.6
-                      <span class="text-xs font-Dana">$</span>
+                      <span className="text-xs font-Dana">$</span>
                     </div>
                   </div>
                 </div>
@@ -287,21 +287,21 @@ export default function Navbar() {
             </div>
 
             {/* <!--//! !Cart-Footer --> */}
-            <div class="py-8 mt-auto absolute bottom-0 flex justify-between items-end gap-x-4">
+            <div className="py-8 mt-auto absolute bottom-0 flex justify-between items-end gap-x-4">
               <Link
                 href="#"
-                class="flex items-center justify-center w-28 h-11 rounded-xl bg-teal-600 dark:bg-emerald-500 dark:hover:bg-teal-500 hover:bg-emerald-600 text-white font-Dana tracking-tightest text-lg"
+                className="flex items-center justify-center w-28 h-11 rounded-xl bg-teal-600 dark:bg-emerald-500 dark:hover:bg-teal-500 hover:bg-emerald-600 text-white font-Dana tracking-tightest text-lg"
               >
                 Place Order
               </Link>
 
               <div>
-                <div class="text-xs text-gray-300 font-DanaMedium dark:text-white tracking-tighter leading-6">
+                <div className="text-xs text-gray-300 font-DanaMedium dark:text-white tracking-tighter leading-6">
                   Payable Amount
                 </div>
-                <div class="flex items-center gap-x-1.5 text-base text-zinc-700 dark:text-white font-DanaDemiBold">
+                <div className="flex items-center gap-x-1.5 text-base text-zinc-700 dark:text-white font-DanaDemiBold">
                   85.3
-                  <span class="text-xs font-Dana">$</span>
+                  <span className="text-xs font-Dana">$</span>
                 </div>
               </div>
             </div>
@@ -555,7 +555,7 @@ export default function Navbar() {
             <span className="block w-[1px] h-14 bg-orange-200"></span>
             {/* !<!-- login & sign up --> */}
             <Link
-              href="#"
+              href="/"
               className="flex gap-x-2.5 items-center text-xl text-orange-200 tracking-tightest"
             >
               <span className="hidden xl:inline-block">Login | Sign Up </span>
