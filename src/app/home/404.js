@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function page() {
@@ -6,7 +7,7 @@ export default function page() {
       <h1 className="text-7xl">404</h1>
       <h2 className="message">Page Not Found</h2>
       <p className="description">
-        Unfortunately, the page you're looking for is not available.
+        Unfortunately, the page you are looking for is not available.
       </p>
       <Link href="/" className="link">
         Go Back to Home

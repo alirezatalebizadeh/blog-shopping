@@ -9,7 +9,9 @@ export default function ContactUs() {
       <div className="container">
         <div className="">
           <div className="flex flex-col gap-y-8 sm:flex-row gap-x-[10px] items-start">
-            <img
+            <Image
+              width={295}
+              height={305}
               src="./images/contact.png"
               className="w-[296px] h-305px mx-auto"
               alt="contact us"

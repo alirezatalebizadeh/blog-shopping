@@ -58,7 +58,10 @@ export default function page() {
             </div>
           </div>
           <div className="mt-6">
-            <button type="button" className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300">
+            <button
+              type="button"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300"
+            >
               Login
             </button>
           </div>
@@ -73,7 +76,7 @@ export default function page() {
         </div>
         <div className="mt-4 text-center flex items-center gap-1">
           <p className="text-gray-600">
-            Don't have an account?{" "}
+            Donot have an account?
             <Link
               href="/signup"
               className="text-blue-500 font-semibold hover:underline"
