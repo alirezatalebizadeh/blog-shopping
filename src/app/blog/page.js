@@ -1,5 +1,10 @@
 import React from "react";
+import Blog from "@/components/Blog";
 
-export default function Blog() {
-  return <div></div>;
+export default function page() {
+  return (
+    <>
+      <Blog />
+    </>
+  );
 }
