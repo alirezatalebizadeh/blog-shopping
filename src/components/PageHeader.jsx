@@ -15,7 +15,7 @@ export default function PageHeader({ array, title }) {
             </Link>
           </li>
           {array.map((item) => (
-            <li>
+            <li key={item}>
               <Link href={item} className="text-white">
                 {item} /
               </Link>

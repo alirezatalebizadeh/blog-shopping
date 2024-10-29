@@ -41,13 +41,13 @@ export default function BestSelling() {
         </div>
         <div className="flex items-center gap-x-3 md:gap-x-[27px]">
           <span
-            className="swiper-button-prev-custom"
+            className="swiper-button-prev-custom cursor-pointer"
             onClick={() => swiperRef.current?.slidePrev()}
           >
             <GoChevronRight className="w-5 h-5 md:w-[26px] md:h-[26px] text-zinc-700 dark:hover:bg-white dark:hover:text-zinc-700 dark:text-white rotate-180" />
           </span>
           <span
-            className="swiper-button-next-custom"
+            className="swiper-button-next-custom cursor-pointer"
             onClick={() => swiperRef.current?.slideNext()}
           >
             <GoChevronLeft className="w-5 h-5 md:w-[26px] md:h-[26px] text-zinc-700 dark:hover:bg-white dark:hover:text-zinc-700 dark:text-white rotate-180" />

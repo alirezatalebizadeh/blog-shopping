@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -75,16 +74,22 @@ export default function Navbar() {
             </div>
 
             {/* Nav Menu Items */}
-            <ul className="space-y-6 text-zinc-600 dark:text-white">
+            <ul className="space-y-6 group text-zinc-600 dark:text-white">
               <li className="flex items-center rounded-md mb-4 pr-0 h-10 bg-orange-200/20 text-orange-300">
-                <Link href="/" className="flex items-center gap-x-2">
+                <Link
+                  href="/"
+                  className="flex items-center gap-x-2 transition-colors"
+                >
                   <TiHomeOutline className="w-5 h-5" />
                   Home
                 </Link>
               </li>
               <li>
                 <div className="flex items-center justify-between">
-                  <Link href="/shop" className="flex items-center gap-x-2">
+                  <Link
+                    href="/shop"
+                    className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
+                  >
                     <HiOutlineShoppingBag className="w-5 h-5" />
                     Shop
                   </Link>
@@ -137,25 +142,37 @@ export default function Navbar() {
                 )}
               </li>
               <li>
-                <Link href="/dictionary" className="flex items-center gap-x-2">
+                <Link
+                  href="/dictionary"
+                  className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
+                >
                   <IoChatboxEllipsesOutline className="w-5 h-5" />
                   Dictionary
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="flex items-center gap-x-2">
+                <Link
+                  href="/blog"
+                  className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
+                >
                   <IoDocumentTextOutline className="w-5 h-5" />
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="flex items-center gap-x-2">
+                <Link
+                  href="/about"
+                  className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
+                >
                   <AiOutlineShoppingCart className="w-5 h-5" />
                   About Me
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="flex items-center gap-x-2">
+                <Link
+                  href="/contact"
+                  className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
+                >
                   <FiPhoneCall className="w-5 h-5" />
                   Contact Us
                 </Link>
@@ -312,7 +329,7 @@ export default function Navbar() {
               />
             </div>
             {/* <!-- !menu --> */}
-            <ul className="flex gap-x-3 lg:gap-x-9 items-center text-xl text-gray-300 tracking-tightest h-full">
+            <ul className="flex group gap-x-3 lg:gap-x-9 items-center text-xl text-gray-300 tracking-tightest h-full">
               <li>
                 <Link href="/" className="font-DanaMedium text-orange-200">
                   Home

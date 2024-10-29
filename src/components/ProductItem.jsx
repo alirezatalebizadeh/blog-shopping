@@ -18,7 +18,7 @@ export default function productItem({ product }) {
           loading="lazy"
         />
         <span className="flex items-center justify-center absolute top-0 right-0 md:top-1 md:right-1 text-xs/normal md:text-base text-white bg-orange-300 rounded-[100px] w-[54px] h-[30px] font-DanaMedium">
-          {product.weight || "250gr"}
+          {product.weight + "gr" || "250gr"}
         </span>
       </div>
       <h2 className="text-zinc-700 dark:text-white font-DanaMedium text-sm/[28px] md:h-14 md:text-xl/[28px] mt-2 mb-1.5 md:mt-5 md:mb-2.5 line-clamp-2">
