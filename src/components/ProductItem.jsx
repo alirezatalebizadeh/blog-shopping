@@ -5,12 +5,6 @@ import { FaRegStar } from "react-icons/fa6";
 import { GoArrowSwitch } from "react-icons/go";
 
 export default function productItem({ product }) {
-  //! an array to save list of products
-
-  // تابع برای اضافه کردن محصول به آرایه
-  const handleCartClick = () => {
-    console.log("click");
-  };
   return (
     <div className="bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-2 md:p-5">
       <div className="relative overflow-hidden">
@@ -50,10 +44,7 @@ export default function productItem({ product }) {
       </div>
       <div className="flex items-center justify-between overflow-hidden">
         <div className="flex items-center gap-x-2.5 md:gap-x-3">
-          <span
-           
-            className="flex-center w-9 h-9 rounded-full text-gray-300 dark:bg-zinc-800 dark:hover:bg-emerald-500 transition-colors hover:bg-teal-600 dark:hover:bg-teal p-[7px]"
-          >
+          <span className="flex-center w-9 h-9 rounded-full text-gray-300 dark:bg-zinc-800 dark:hover:bg-emerald-500 transition-colors hover:bg-teal-600 dark:hover:bg-teal p-[7px]">
             <AiOutlineShoppingCart className="w-[22px] h-[22px]" />
           </span>
           <span className="flex-center text-gray-400">
