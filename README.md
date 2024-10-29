@@ -1,3 +1,5 @@
+#See [Demo](https://blog-shopping.vercel.app/)
+
 Here's a basic `README.md` template for your project. This file is based on the structure visible in your uploaded screenshot and includes standard sections like setup instructions, usage, and a brief overview. Adjust any specific details as needed.
 
 ---
@@ -36,7 +38,7 @@ This project is a **[type of application, e.g., e-commerce, blogging platform, e
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/your-repository-name.git
+   git clone https://github.com/alirezatalebizadeh/blog-shopping.git
    ```
 
 2. **Navigate to the project directory:**
@@ -112,6 +114,7 @@ Here are descriptions of some key components in the project:
 - **ContactUs** - Contact form component for user inquiries.
 - **ProductsItem** - Displays individual product details in a list/grid.
 - **Footer** - Footer section with additional links and information.
+- **etc**
 
 ## Contributing
 
