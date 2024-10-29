@@ -152,6 +152,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/dictionary"
+                  onClick={(prev) => setIsNavOpen(!prev)}
                   className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
                 >
                   <IoChatboxEllipsesOutline className="w-5 h-5" />
@@ -221,7 +222,10 @@ export default function Navbar() {
               </div>
               <Link
                 href="#"
-                onClick={(prev) => setIsNavOpen(!prev)}
+                onClick={(prev) => {
+                  setIsNavOpen(false);
+                  setIsCartOpen(true);
+                }}
                 className="flex items-center gap-1 text-orange-300"
               >
                 Cart
