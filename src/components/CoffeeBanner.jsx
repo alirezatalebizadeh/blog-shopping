@@ -15,6 +15,7 @@ export default function CoffeeBanner() {
               alt="coffee club"
               width={110}
               height={100}
+              loading="lazy"
             />
             <div>
               <h2 className="font-MorabbaBold text-2xl/7 sm:text-3xl/[35px] md:text-5xl/[48px] mb-[2px] md:mb-2">

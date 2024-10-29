@@ -17,10 +17,12 @@ export default function Footer() {
                 alt="logo"
                 width={57}
                 height={54}
+                loading="lazy"
               />
               <Image
                 width={138}
                 alt="logo"
+                loading="lazy"
                 height={54}
                 src="/images/svgs/app-logo-type.svg"
                 className="w-[138px] h-[54px] text-white"
@@ -151,6 +153,7 @@ export default function Footer() {
                     alt="hotCoffee"
                     width={26}
                     height={26}
+                    loading="lazy"
                   />
                   <span>
                     <span
@@ -171,6 +174,7 @@ export default function Footer() {
                     alt="hotcoffee"
                     width={26}
                     height={26}
+                    loading="lazy"
                   />
                   <span>
                     <span

@@ -9,6 +9,7 @@ export default function LoadingComponent() {
         alt="Logo"
         width={300}
         height={300}
+        loading="lazy"
       />
     </div>
   );

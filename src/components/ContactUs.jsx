@@ -12,6 +12,7 @@ export default function ContactUs() {
             <Image
               width={295}
               height={305}
+              loading="lazy"
               src="/images/contact.png"
               className="w-[296px] h-305px mx-auto"
               alt="contact us"
@@ -52,6 +53,7 @@ export default function ContactUs() {
             {/* <!--//! Service 1 --> */}
             <div className="md:flex items-center text-center gap-x-4">
               <Image
+                loading="lazy"
                 className="dark:hidden w-[76px] h-[73px]"
                 src="/images/servise1.svg"
                 alt="services"
@@ -59,6 +61,7 @@ export default function ContactUs() {
                 height={73}
               />
               <Image
+                loading="lazy"
                 className="hidden dark:inline-block w-[76px] h-[73px]"
                 src="/images/serviseNight.svg"
                 alt="services"
@@ -80,12 +83,14 @@ export default function ContactUs() {
                 alt="services"
                 width={73}
                 height={76}
+                loading="lazy"
               />
               <Image
                 className="hidden dark:inline-block w-[76px] h-[73px]"
                 src="/images/services2.svg"
                 alt="services"
                 width={76}
+                loading="lazy"
                 height={73}
               />
               <div className="text-zinc-700 dark:text-white text-center">
@@ -111,12 +116,14 @@ export default function ContactUs() {
                 src="/images/servises3.svg"
                 alt="services"
                 width={73}
+                loading="lazy"
                 height={76}
               />
               <Image
                 className="dark:hidden w-[76px] h-[73px]"
                 src="/images/servises3Night.svg"
                 alt="services"
+                loading="lazy"
                 width={76}
                 height={73}
               />
@@ -136,6 +143,7 @@ export default function ContactUs() {
                 className="dark:hidden w-[76px] h-[73px]"
                 src="/images/servises4.svg"
                 alt="services"
+                loading="lazy"
                 width={73}
                 height={76}
               />
@@ -144,6 +152,7 @@ export default function ContactUs() {
                 src="/images/services4Night.svg"
                 alt="services"
                 width={76}
+                loading="lazy"
                 height={73}
               />
 

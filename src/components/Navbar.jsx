@@ -19,7 +19,6 @@ export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
-
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -61,6 +60,7 @@ export default function Navbar() {
                 <Image
                   src="/images/app-logo.png"
                   width={41}
+                  loading="lazy"
                   height={40}
                   alt="hotCoffee"
                 />
@@ -244,6 +244,7 @@ export default function Navbar() {
               <div className="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10">
                 <Image
                   width={90}
+                  loading="lazy"
                   height={90}
                   className="w-[90px] h-[90px]"
                   src="/images/products/p1.png"
@@ -269,6 +270,7 @@ export default function Navbar() {
               <div className="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10">
                 <Image
                   width={90}
+                  loading="lazy"
                   height={90}
                   className="w-[90px] h-[90px]"
                   src="/images/products/p2.png"
@@ -322,6 +324,7 @@ export default function Navbar() {
           <nav className="flex md:gap-9 items-center h-14">
             <div className="shrink-0">
               <Image
+                loading="lazy"
                 src="/images/app-logo.png"
                 alt="logo"
                 width={60}
@@ -451,6 +454,7 @@ export default function Navbar() {
                     <div className="flex gap-x-2.5 py-5">
                       <div>
                         <Image
+                          loading="lazy"
                           width={90}
                           height={90}
                           className="w-30 h-30"
@@ -476,6 +480,7 @@ export default function Navbar() {
                     <div className="flex gap-x-2.5 py-5">
                       <div>
                         <Image
+                          loading="lazy"
                           width={90}
                           height={90}
                           className="w-30 h-30"
@@ -501,6 +506,7 @@ export default function Navbar() {
                     <div className="flex gap-x-2.5 py-5">
                       <div>
                         <Image
+                          loading="lazy"
                           width={90}
                           height={90}
                           className="w-30 h-30"
