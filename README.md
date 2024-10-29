@@ -1,4 +1,6 @@
 ## See [Demo](https://blog-shopping.vercel.app/)
+## Summary: I hope you like it
+this project create with next js , swiper and tailwind css. my font is "dana" . you can see structure of project . 
 
 Here's a basic `README.md` template for your project. This file is based on the structure visible in your uploaded screenshot and includes standard sections like setup instructions, usage, and a brief overview. Adjust any specific details as needed.
 
