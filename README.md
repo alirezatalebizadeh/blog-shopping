@@ -1,4 +1,4 @@
-#See [Demo](https://blog-shopping.vercel.app/)
+## See [Demo](https://blog-shopping.vercel.app/)
 
 Here's a basic `README.md` template for your project. This file is based on the structure visible in your uploaded screenshot and includes standard sections like setup instructions, usage, and a brief overview. Adjust any specific details as needed.
 
