@@ -79,6 +79,7 @@ export default function Navbar() {
                 <Link
                   href="/"
                   className="flex items-center gap-x-2 transition-colors"
+                  onClick={(prev) => setIsNavOpen(!prev)}
                 >
                   <TiHomeOutline className="w-5 h-5" />
                   Home
@@ -89,6 +90,7 @@ export default function Navbar() {
                   <Link
                     href="/shop"
                     className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
+                    onClick={(prev) => setIsNavOpen(!prev)}
                   >
                     <HiOutlineShoppingBag className="w-5 h-5" />
                     Shop
@@ -103,37 +105,43 @@ export default function Navbar() {
                 {isSubmenuOpen && (
                   <div className="submenu ml-5 mt-2 space-y-2">
                     <Link
-                      href="#"
+                      href="/shop"
                       className="hover:text-orange-300 transition-colors block"
+                      onClick={(prev) => setIsNavOpen(!prev)}
                     >
                       Special Coffee
                     </Link>
                     <Link
-                      href="#"
+                      href="/shop"
+                      onClick={(prev) => setIsNavOpen(!prev)}
                       className="hover:text-orange-300 transition-colors block"
                     >
                       Global Special
                     </Link>
                     <Link
-                      href="#"
+                      href="/shop"
+                      onClick={(prev) => setIsNavOpen(!prev)}
                       className="hover:text-orange-300 transition-colors block"
                     >
                       Premium Coffee
                     </Link>
                     <Link
-                      href="#"
+                      href="/shop"
+                      onClick={(prev) => setIsNavOpen(!prev)}
                       className="hover:text-orange-300 transition-colors block"
                     >
                       Commercial Blends
                     </Link>
                     <Link
-                      href="#"
+                      href="/shop"
+                      onClick={(prev) => setIsNavOpen(!prev)}
                       className="hover:text-orange-300 transition-colors block"
                     >
                       Zino Brazilian Coffee
                     </Link>
                     <Link
-                      href="#"
+                      href="/shop"
+                      onClick={(prev) => setIsNavOpen(!prev)}
                       className="hover:text-orange-300 transition-colors block"
                     >
                       Coffee Capsules
@@ -153,6 +161,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/blog"
+                  onClick={(prev) => setIsNavOpen(!prev)}
                   className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
                 >
                   <IoDocumentTextOutline className="w-5 h-5" />
@@ -162,6 +171,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/about"
+                  onClick={(prev) => setIsNavOpen(!prev)}
                   className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
                 >
                   <AiOutlineShoppingCart className="w-5 h-5" />
@@ -171,6 +181,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/contact"
+                  onClick={(prev) => setIsNavOpen(!prev)}
                   className="flex items-center gap-x-2 transition-colors hover:text-orange-300"
                 >
                   <FiPhoneCall className="w-5 h-5" />
@@ -183,6 +194,7 @@ export default function Navbar() {
             <div className="mt-8 border-t border-gray-100 dark:border-white/10 pt-5 space-y-6">
               <Link
                 href="/login"
+                onClick={(prev) => setIsNavOpen(!prev)}
                 className="flex gap-1 items-center text-orange-300"
               >
                 Login | Sign Up
@@ -209,6 +221,7 @@ export default function Navbar() {
               </div>
               <Link
                 href="#"
+                onClick={(prev) => setIsNavOpen(!prev)}
                 className="flex items-center gap-1 text-orange-300"
               >
                 Cart

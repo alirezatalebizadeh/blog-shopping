@@ -4,7 +4,7 @@ import { GoChevronDown } from "react-icons/go";
 export default function HeaderPage() {
   return (
     <>
-      <section className="overflow-hidden relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-cover bg-no-repeat bg-[item-top]">
+      <section className="overflow-hidden relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop md:bg-center	 bg-cover bg-no-repeat bg-[item-top]">
         <div className="container relative overflow-y-hidden h-[100%] md:min-h-screen flex items-center justify-start md:ml-20">
           <div className="text-white mt-[15px]">
             <h2 className="font-MorabbaBold text-2xl/[20px] leading-8 md:text-6xl mb-0.5 md:mb-2 md:leading-[62px]">

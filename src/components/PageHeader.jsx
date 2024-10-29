@@ -3,7 +3,7 @@ import React from "react";
 
 export default function PageHeader({ array, title }) {
   return (
-    <div className="bg-gray-200 p-4 h-[25vh]   md:h-[70vh] flex flex-col items-center justify-center bg-home-mobile md:bg-home-desktop bg-cover bg-no-repeat bg-[item-top]">
+    <div className="bg-gray-200 p-4 h-[25vh]   md:h-[70vh] flex flex-col items-center justify-center bg-home-mobile md:bg-home-desktop bg-cover  bg-no-repeat bg-center">
       {/* //! title */}
       <h1 className="text-2xl font-semibold text-white md:text-3xl">{title}</h1>
       {/* //! bread crumb */}
