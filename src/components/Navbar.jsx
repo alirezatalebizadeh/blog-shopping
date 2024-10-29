@@ -20,9 +20,6 @@ export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
-  // const [isDarkMode, setIsDarkMode] = useState(
-  //   typeof window !== "undefined" && localStorage.getItem("theme") === "dark"
-  // );
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -36,14 +33,6 @@ export default function Navbar() {
 
   //! Toggle the theme
   const toggleTheme = () => {
-    // if (isDarkMode) {
-    //   document.documentElement.classList.remove("dark");
-    //   localStorage.setItem("theme", "light");
-    // } else {
-    //   document.documentElement.classList.add("dark");
-    //   localStorage.setItem("theme", "dark");
-    // }
-    // setIsDarkMode(!isDarkMode);
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
@@ -95,7 +84,7 @@ export default function Navbar() {
               </li>
               <li>
                 <div className="flex items-center justify-between">
-                  <Link href="#" className="flex items-center gap-x-2">
+                  <Link href="/shop" className="flex items-center gap-x-2">
                     <HiOutlineShoppingBag className="w-5 h-5" />
                     Shop
                   </Link>
@@ -331,7 +320,7 @@ export default function Navbar() {
               </li>
               <li className="relative group py-4">
                 <Link
-                  href="#"
+                  href="/shop"
                   className="group-hover:text-orange-300 transition-colors"
                 >
                   shop
