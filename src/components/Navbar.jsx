@@ -44,7 +44,7 @@ export default function Navbar() {
   return (
     <>
       {/*//! Header for mobile */}
-      <div className="flex items-center justify-between z-50 md:hidden text-zinc-700  dark:bg-zinc-700 px-5 h-16">
+      <div className="sticky top-0 flex items-center justify-between z-50 md:hidden bg-white text-zinc-700  dark:bg-zinc-700 px-5 h-16">
         <div
           onClick={() => setIsNavOpen(true)}
           className="dark:text-white cursor-pointer"
