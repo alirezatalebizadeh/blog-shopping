@@ -8,6 +8,7 @@ export default function Page() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -64,11 +65,39 @@ export default function Page() {
                 />
               </svg>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 placeholder="Enter password"
                 className="flex-grow p-2 outline-none text-gray-600"
                 onChange={(e) => setPassword(e.target.value)}
               />
+
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)} // تغییر وضعیت نمایش رمز عبور
+                className="ml-2 "
+              >
+                {showPassword ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    className="w-5 h-5 text-gray-400"
+                  >
+                    {/* آیکون چشم باز */}
+                    <path d="M8 3C4.571 3 1.425 5.686.153 8.314a.86.86 0 0 0 0 .742C1.425 10.314 4.571 13 8 13s6.575-2.686 7.847-4.314a.86.86 0 0 0 0-.742C14.575 5.686 11.429 3 8 3Zm0 8c-1.933 0-3.5-1.567-3.5-3.5S6.067 4.5 8 4.5s3.5 1.567 3.5 3.5S9.933 11 8 11Zm0-1.5A2 2 0 1 1 8 5.5a2 2 0 0 1 0 4Z" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    className="w-5 h-5 text-gray-400"
+                  >
+                    {/* آیکون چشم بسته */}
+                    <path d="M13.359 11.876 14.718 13.235 13.305 14.648l-1.57-1.57c-1.072.718-2.317 1.19-3.735 1.19-3.429 0-6.575-2.686-7.847-4.314a.86.86 0 0 1 0-.742A9.928 9.928 0 0 1 6.973 3.13l-.738-.738L7.646.98 8.707 2.04c1.072-.718 2.317-1.19 3.735-1.19 3.429 0 6.575 2.686 7.847 4.314a.86.86 0 0 1 0 .742 9.938 9.938 0 0 1-4.93 3.97Zm-1.415-1.415a8.062 8.062 0 0 0-7.776-1.42L2.025 8.086A8.036 8.036 0 0 0 8 12.5c1.418 0 2.663-.472 3.735-1.19Z" />
+                  </svg>
+                )}
+              </button>
             </div>
             <div className="mt-2 text-right">
               <a href="#" className="text-sm text-blue-500 hover:underline">
