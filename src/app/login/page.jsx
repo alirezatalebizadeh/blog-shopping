@@ -1,14 +1,23 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function page() {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const isLoginValid =
-    email === "alireza@gmail.com" && password === "alireza@881";
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (email === "alireza@gmail.com" && password === "alireza@881") {
+      router.push("/");
+      console.log("success");
+    } else {
+      setError("ایمیل یا رمز عبور اشتباه است.");
+    }
+  };
 
   return (
     <div className="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden mt-10">
@@ -69,20 +78,13 @@ export default function page() {
             {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
           </div>
           <div className="mt-6">
-            {isLoginValid ? (
-              <Link href="/">
-                <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300">
-                  Login
-                </button>
-              </Link>
-            ) : (
-              <button
-                onClick={() => setError("ایمیل یا رمز عبور اشتباه است.")}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300"
-              >
-                Login
-              </button>
-            )}
+            <button
+              type="submit"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300"
+              onClick={handleLogin}
+            >
+              Login
+            </button>
           </div>
         </form>
         <div className="relative mt-6">
