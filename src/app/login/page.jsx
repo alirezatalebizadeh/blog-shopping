@@ -1,7 +1,15 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function page() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const isLoginValid =
+    email === "alireza@gmail.com" && password === "alireza@881";
+
   return (
     <div className="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden mt-10">
       <div className="p-6">
@@ -25,6 +33,7 @@ export default function page() {
                 type="email"
                 placeholder="email@example.com"
                 className="flex-grow p-2 outline-none text-gray-600"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </div>
@@ -49,6 +58,7 @@ export default function page() {
                 type="password"
                 placeholder="Enter password"
                 className="flex-grow p-2 outline-none text-gray-600"
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className="mt-2 text-right">
@@ -56,14 +66,23 @@ export default function page() {
                 Forgot password?
               </a>
             </div>
+            {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
           </div>
           <div className="mt-6">
-            <button
-              type="button"
-              className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300"
-            >
-              Login
-            </button>
+            {isLoginValid ? (
+              <Link href="/">
+                <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300">
+                  Login
+                </button>
+              </Link>
+            ) : (
+              <button
+                onClick={() => setError("ایمیل یا رمز عبور اشتباه است.")}
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-300"
+              >
+                Login
+              </button>
+            )}
           </div>
         </form>
         <div className="relative mt-6">

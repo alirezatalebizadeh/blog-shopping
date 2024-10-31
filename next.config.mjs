@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["iili.io"], 
+    domains: ["iili.io"],
   },
-  reactStrictMode: true, // فعال‌سازی React Strict Mode برای کمک به تشخیص خطاها
+  reactStrictMode: true,
   experimental: {
     reactRefresh: false, // غیرفعال کردن Fast Refresh
   },
